@@ -74,9 +74,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()) {
             case R.id.button_c:
-                transacao(jogador2, jogador1, mOldValor);
+                transacao(jogador1, jogador2, -mOldValor);
                 mSaidaView.setText("");
-                mSaidaView.setHint("Transação cancelada!");
+                mSaidaView.setHint("Transação revertida!");
+                mOldValor = 0;
                 break;
             case R.id.button_k:
                 if (valor < 1000)
@@ -116,20 +117,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mSaidaView.setHint("Transação bem sucedida!");
             mFeedbackTextView.setText("Jogador -> Banco");
             mJogador2TextView.setText(String.valueOf(mapa.get(jogador2)));
+            mJogador1TextView.setText("Banco");
             mOldValor = valor;
             return;
-        } else if (jogador2 == 0 || jogador2 > 6) {
+        } else if (jogador2 == 0 || jogador2 > 6 ) {
             int teste1 = mapa.get(jogador1);
             mapa.replace(jogador1, teste1 + valor);
             mSaidaView.setText("");
             mSaidaView.setHint("Transação bem sucedida!");
             mFeedbackTextView.setText("Banco -> Jogador");
-            mJogador1TextView.setText(String.valueOf(mapa.get(jogador2)));
+            mJogador1TextView.setText(String.valueOf(mapa.get(jogador1)));
+            mJogador2TextView.setText("Banco");
             mOldValor = valor;
+
             return;
         } else {
             if ((mapa.get(jogador2) - valor) < -1) return;
-            mOldValor = valor;
+
             int teste1 = mapa.get(jogador1);
             int teste2 = mapa.get(jogador2);
             mapa.replace(jogador1, teste1 + valor);
@@ -139,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             mSaidaView.setText("");
             mSaidaView.setHint("Transação bem sucedida!");
             mFeedbackTextView.setText("Jogador -> Jogador");
+            mOldValor = valor;
         }
     }
 

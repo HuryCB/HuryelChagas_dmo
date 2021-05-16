@@ -96,7 +96,7 @@
 
         <EditText
             android:id="@+id/text_jogador1"
-            android:layout_width="64dp"
+            android:layout_width="88dp"
             android:layout_height="64dp"
             android:layout_margin="12dp"
             android:layout_marginLeft="60dp"
@@ -107,7 +107,7 @@
 
         <EditText
             android:id="@+id/text_jogador2"
-            android:layout_width="64dp"
+            android:layout_width="88dp"
             android:layout_height="64dp"
             android:layout_margin="12dp"
             android:layout_marginLeft="60dp"
@@ -138,12 +138,14 @@
         <TextView
             android:id="@+id/view_jogador1"
             android:layout_width="100dp"
+            android:gravity="center"
             android:layout_height="48dp"
             android:layout_margin="10dp" />
 
         <TextView
             android:id="@+id/view_jogador2"
             android:layout_width="100dp"
+            android:gravity="center"
             android:layout_height="match_parent"
             android:layout_margin="10dp" />
     </LinearLayout>
