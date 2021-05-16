@@ -14,21 +14,25 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText mEntradaText;
-    private Button mParaCelsiusButton;
+    private Button mParaCelsiusButton, mParaFahrenheitButton;
     private TextView mSaidaView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ActionBar actionbar;
         actionbar = getSupportActionBar();
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#FF3700B3"));
         actionbar.setBackgroundDrawable(colorDrawable);
+
         mEntradaText = findViewById(R.id.text_entrada);
         mParaCelsiusButton = findViewById(R.id.button_paraCelsius);
+        mParaFahrenheitButton = findViewById(R.id.button_paraFahrenheit);
         mSaidaView = findViewById(R.id.text_saida);
         mParaCelsiusButton.setOnClickListener(this);
+        mParaFahrenheitButton.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 calculo = (float) ((entrada-32)/1.8);
                // mSaidaView.setText(String.format("%.2f ºC",Float.toString(calculo)));
                 mSaidaView.setText(String.format("%.2fºC",calculo));
+            }else if(view.getId()==R.id.button_paraFahrenheit){
+                calculo = (float) (1.8*entrada)+32;
+                mSaidaView.setText(String.format("%.2fºF",calculo));
             }
         }catch (NumberFormatException ex){
             mSaidaView.setText("Erro, digite um valor válido");

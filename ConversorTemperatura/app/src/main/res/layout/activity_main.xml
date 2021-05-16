@@ -27,18 +27,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
         android:gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_paraCelsius"
-            android:layout_width="wrap_content"
+            android:layout_width="156dp"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:backgroundTint="#C3C1C1"
-            android:text="CONVERTER PARA CELSIUS"
+            android:text="CELSIUS"
             android:textColor="@color/black" />
-
+        <Button
+            android:id="@+id/button_paraFahrenheit"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:backgroundTint="#C3C1C1"
+            android:text="Fahrenheit"
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <TextView
