@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginHardcore</string>
+    <string name="hint_email_user">Digite o e-mail do usuário</string>
+    <string name="hint_password">Digie a senha do usuário</string>
+    <string name="login">Login</string>
+
+    <string name="msg_login_sucess">Login realizado com sucesso.</string>
+    <string name="msg_login_error">Erro ao realizar login.</string>
+</resources>
