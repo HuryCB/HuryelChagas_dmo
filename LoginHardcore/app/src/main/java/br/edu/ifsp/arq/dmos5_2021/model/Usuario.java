@@ -20,4 +20,8 @@ public class Usuario {
         }
         return false;
     }
+
+    public String getUsername() {
+        return username;
+    }
 }
