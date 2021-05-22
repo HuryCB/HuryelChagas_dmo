@@ -56,3 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 }
+
+/*
+Projeto bem organizado.
+Na versão 1, o botão está dentro de um LinearLayout desnecessário.
+Nota 10.
+ */
