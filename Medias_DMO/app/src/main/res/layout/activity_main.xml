@@ -90,11 +90,26 @@
         android:id="@+id/mediaAritmeticaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Média"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
+        android:text="Aritmetica"
+
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintEnd_toStartOf="@id/mediaHarmonicaButton"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/mediaHarmonicaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Harmonica"
+        app:layout_constraintStart_toEndOf="@id/mediaAritmeticaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <TextView

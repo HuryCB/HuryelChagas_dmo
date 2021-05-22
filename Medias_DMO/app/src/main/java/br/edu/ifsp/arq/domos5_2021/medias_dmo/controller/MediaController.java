@@ -22,9 +22,9 @@ public class MediaController {
         return media(aritmetica);
     }
 
-    public static Double mediaHarmonica(/*Indicar argumentos, se necessário*/){
+    public static Double mediaHarmonica(List<Double> values){
         MediaHarmonica harmonica = null;
-        //TODO implementar o restante do método
+        harmonica = new MediaHarmonica( values );
         return media(harmonica);
     }
 

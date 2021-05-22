@@ -12,7 +12,10 @@ public class MediaHarmonica implements MediaStrategy{
 
     @Override
     public Double calcularMedia() {
-        //TODO implementar o método.
-        return null;
+        Double sum = 0D;
+        for(Double d : values){
+            sum += 1/d;
+        }
+        return values.size()/sum;
     }
 }
