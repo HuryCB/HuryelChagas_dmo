@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Medias_DMO</string>
+    <string name="msg_sucess">Media calculada com sucesso</string>
+    <string name="msg_error">Algum valor está faltando!</string>
+</resources>
