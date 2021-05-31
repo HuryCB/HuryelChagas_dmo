@@ -150,6 +150,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 }
 
 /*
+Gostei da implementação, simples e funcional. Porém não considera programação orientada a objetos
+como recurso, utiliza uma lógica estruturada (sem prejuíjo).
+
+Aplicativo funcionando perfeitamente, apenas falta um retorno para o usuário quando uma transação
+não é realizada por falta de credito.
+
+Um detalhe no retorno ao usuário é a mensagem que trata de como a transação é realizada, uma sugestão
+é alterar a direção da seta "jogador <- jogador" pois o que ganha está sempre a esquerda.
+
+
+Nota: 9,5
+ */
+
+/*
 <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
