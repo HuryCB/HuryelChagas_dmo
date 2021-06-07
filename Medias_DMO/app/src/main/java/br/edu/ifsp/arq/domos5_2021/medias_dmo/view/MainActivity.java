@@ -128,3 +128,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 }
+
+/*
+Versão 1 e 2:
+Implementação correta e adequada.
+
+Versão 3:
+Não consegue abrir as activities com o resultado da média. Não implementou a média ponderada.
+
+
+Sugestão:
+Evite criar métodos muito longos. O onClick() está ficando um método extenso e dificulta a
+manutenção.
+
+Nota: 5,0
+ */
