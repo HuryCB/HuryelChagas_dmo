@@ -12,3 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+
+/*
+Aplicativo sem programação.
+
+Nota: 2,0
+ */
