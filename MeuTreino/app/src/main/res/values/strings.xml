@@ -1,0 +1,5 @@
+<resources>
+    <string name="supino_inclinado">O supino inclinado consiste no mesmo que o reto, a diferença está no aparelho, que possui angulação de 45 graus.</string>
+    <string name="app_name">MeuTreino</string>
+    <string name="supino_reto">O supino reto consiste essencialmente em uma flexão de ombro horizontal seguida por uma extensão de cotovelo — movimentos potencializados pela carga na barra.</string>
+</resources>
