@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".PeitoActivity"/>
         <activity android:name=".AbdomenActivity"/>
+        <activity android:name=".LoginActivity"/>
     </application>
 
 </manifest>
